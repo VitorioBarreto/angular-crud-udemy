@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
+import { Header } from './components/template/header/header';
+
+import { MatToolbarModule } from '@angular/material/toolbar';
+
 
 @NgModule({
   declarations: [
-    App
+    App,
+    Header
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatToolbarModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
@@ -18,4 +24,6 @@ import { App } from './app';
   ],
   bootstrap: [App]
 })
-export class AppModule { }
+export class AppModule {
+
+ }
