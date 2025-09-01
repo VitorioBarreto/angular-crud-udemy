@@ -32,7 +32,8 @@
               },
               {
                 "glob": "**/*",
-                "input": "src/app/components/template/header/assets/img"
+                "input": "src/assets",
+                "output": "/assets/"
               }
             ],
             "styles": [

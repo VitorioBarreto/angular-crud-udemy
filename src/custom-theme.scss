@@ -33,3 +33,11 @@ body {
   // Reset the user agent margin.
   margin: 0;
 }
+
+.mat-elevation-z4 {
+  @include mat.elevation(4);
+}
+
+.mat-elevation-z3 {
+  @include mat.elevation(3);
+}
