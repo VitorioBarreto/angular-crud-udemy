@@ -14,7 +14,8 @@ import { Nav } from './components/template/nav/nav';
 import  { MatSidenavModule } from '@angular/material/sidenav'
 import  { MatCardModule } from '@angular/material/card'
 import  { MatListModule } from '@angular/material/list';
-import { Home } from './views/home/home'
+import { Home } from './views/home/home';
+import { ProductCrud } from './views/product-crud/product-crud'
 
 
 
@@ -25,7 +26,8 @@ import { Home } from './views/home/home'
     Header,
     Footer,
     Nav,
-    Home
+    Home,
+    ProductCrud
   ],
   imports: [
     BrowserModule,
