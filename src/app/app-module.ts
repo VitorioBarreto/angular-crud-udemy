@@ -6,7 +6,6 @@ import { App } from './app';
 import { Header } from './components/template/header/header';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
-// import { provideAnimations } from '@angular/platform-browser/animations';
 import { Footer } from './components/template/footer/footer';
 import { Nav } from './components/template/nav/nav';
 
@@ -15,10 +14,12 @@ import  { MatSidenavModule } from '@angular/material/sidenav'
 import  { MatCardModule } from '@angular/material/card'
 import  { MatListModule } from '@angular/material/list';
 import { Home } from './views/home/home';
-import { ProductCrud } from './views/product-crud/product-crud'
+import { ProductCrud } from './views/product-crud/product-crud';
+import { ProductCreate } from './components/product/product-create/product-create';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 
-
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ProductCrud } from './views/product-crud/product-crud'
     Footer,
     Nav,
     Home,
-    ProductCrud
+    ProductCrud,
+    ProductCreate
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,10 @@ import { ProductCrud } from './views/product-crud/product-crud'
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatSnackBarModule,
+    HttpClientModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),

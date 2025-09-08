@@ -1,17 +1,22 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './views/home/home';
-import { ProductCrudComponent } from './views/product-crud/product-crud'; // Adjust the path if necessary
+import { Home } from './views/home/home';
+import { ProductCrud } from './views/product-crud/product-crud'; // Adjust the path if necessary
+import { ProductCreate } from './components/product/product-create/product-create';
 
 const routes: Routes = [
   {
     path: "",
-    component: HomeComponent
+    component: Home
   },
   {
     path: "products",
-    component: ProductCrudComponent
+    component: ProductCrud
+  },
+  {
+    path: "products/create",
+    component: ProductCreate
   }
 ];
 
