@@ -12,8 +12,8 @@ import { Product } from '../product.model';
 export class ProductCreate {
 
   product: Product = {
-    name: 'Produto X',
-    price: 118.99
+    name: '',
+    price: null
   }
 
   constructor(private productService: ProductService, private router: Router) { }
@@ -32,7 +32,7 @@ export class ProductCreate {
   }
 
    cancel(): void {
-  //   this.router.navigate(['/products']);
-  //   this.productService.showMessage('Operação cancelada!');
+    this.router.navigate(['/products']);
+    this.productService.showMessage('Operação cancelada!');
  }
 }
